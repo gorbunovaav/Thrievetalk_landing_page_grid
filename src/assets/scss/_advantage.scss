@@ -1,0 +1,35 @@
+.advantage {
+    height: 542px;
+
+    &__list {
+        height: 480px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            padding:55px 141px 37px 105px;
+        }
+    }
+
+    &__heading {
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: -0.03em;
+        color: #22356F;
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: -0.03em;
+        color: rgba(34, 53, 111, 0.5);
+        width: 298px;
+        height: 84px;
+    }
+}
