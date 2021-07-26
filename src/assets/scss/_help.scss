@@ -1,0 +1,94 @@
+.help {
+    height: 1561px;
+    &__heading {
+        margin-top: 76px;
+        margin-bottom: 24px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        color: rgba(34, 53, 111, 0.5);
+    }
+
+    &__list1 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 360px;
+        &-item {
+                padding: 95px 50px 211px 78px;
+                font-size: 32px;
+                line-height: 34px;
+                letter-spacing: -0.006em;
+                color: #FFFFFF;
+                font-weight: bold;
+                display: flex;
+                &:before {
+                    color: #E9B730;
+                    content: "•";
+                    padding-right: 15px;
+                    width: 9px;
+                    height: 9px;
+                }
+
+            &#rose {
+                background-color: #FFE2DE;
+            }
+            &#green {
+                background-color:#C4E769;
+            }
+            &#lightblue {
+                background-color:#62D0DF;
+            }
+            &#blue {
+                background-color:#0052C1;
+                ;
+            }
+        }
+    }
+
+    &__list2{
+        margin-top: 120px;
+        height:960px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        &-item{
+            padding: 126px 219px 282px 104px;
+            font-size: 32px;
+            line-height: 34px;
+            letter-spacing: -0.006em;
+            color: #FFFFFF;
+            display: flex;
+            font-weight: bold;
+            &:before {
+                color: #E9B730;
+                content: "•";
+                padding-right: 20px;
+                width: 12px;
+                height: 12px;
+            }
+            &#darkblue{
+                background-color:#22356F;
+            }
+            &#blue{
+                background-color:#0052C1;
+            }
+            &#backgr{
+                background-image:url(/src/assets/images/Help_nutrition_bg.png);
+                width: 480px;
+                height: 480px;
+                background-position: center;
+            }
+            &#lightblue{
+                background-color:#62D0DF;
+            }
+            &#rose{
+                background-color:#DEE1FF;
+                ;
+            }
+            &#purple{
+                background-color:#8F00FF;
+            }
+        }
+    }
+}
