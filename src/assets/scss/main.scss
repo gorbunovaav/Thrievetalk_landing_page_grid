@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Larsseit';
-    src: local("Larsseit"), url(./../fonts/Larsseit.ttf);
+    src: local('Larsseit'),
+        url(./../fonts/Larsseit.ttf);
 }
 
 html,
@@ -10,6 +11,7 @@ body {
     margin: 0 auto;
     padding: 0;
 }
+
 
 ul {
     list-style: none;
@@ -21,12 +23,8 @@ a {
     text-decoration: none;
 }
 
-.header {
-    height: 840px;
-    background-color: aqua;
-}
 
-.header__top {
-    display: -ms-flexbox;
-    display: flex;
-}
+@import './layouts/header';
+@import './layouts/menu';
+@import './components/buttons';
+@import './normalize';

@@ -1,0 +1,32 @@
+.header__btn{
+    &--round{
+        width: 150px;
+        height: 50px;
+        background: #62D0DF;
+        border-radius: 50px;
+        font-family: Larsseit;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        border: none;
+        z-index: 10;
+    }
+    &--square{
+        width: 150px;
+        height: 50px;
+        background: #F9B640;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+    &--no-bg--yellow{
+        width: 150px;
+        height: 43px;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.1em;
+        color: #FAB63E;
+        margin-left:38px;
+        text-align: left;
+    }
+}
