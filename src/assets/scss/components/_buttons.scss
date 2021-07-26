@@ -1,3 +1,14 @@
+button{
+    &:hover {
+        filter: brightness(115%);
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -webkit-filter: brightness(115%);
+    }
+}
 .header__btn{
     &--round{
         width: 150px;

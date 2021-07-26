@@ -5,7 +5,7 @@
 html,
 body {
   font-family: "Larsseit";
-  max-width: 1920px;
+  max-width: 1437px;
   margin: 0 auto;
   padding: 0; }
 
@@ -16,6 +16,49 @@ ul {
 a {
   display: inline-block;
   text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+button:hover {
+  filter: brightness(115%);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-filter: brightness(115%); }
+
+.header__btn--round {
+  width: 150px;
+  height: 50px;
+  background: #62D0DF;
+  border-radius: 50px;
+  font-family: Larsseit;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  border: none;
+  z-index: 10; }
+
+.header__btn--square {
+  width: 150px;
+  height: 50px;
+  background: #F9B640;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF; }
+
+.header__btn--no-bg--yellow {
+  width: 150px;
+  height: 43px;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #FAB63E;
+  margin-left: 38px;
+  text-align: left; }
 
 .header {
   height: 840px;
@@ -68,35 +111,33 @@ a {
     line-height: 16px;
     color: #22356F; }
 
-.header__btn--round {
-  width: 150px;
-  height: 50px;
+.reasons {
+  height: 607px;
   background: #62D0DF;
-  border-radius: 50px;
-  font-family: Larsseit;
-  font-size: 14px;
-  line-height: 16px;
-  color: #FFFFFF;
-  border: none;
-  z-index: 10; }
-
-.header__btn--square {
-  width: 150px;
-  height: 50px;
-  background: #F9B640;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-  color: #FFFFFF; }
-
-.header__btn--no-bg--yellow {
-  width: 150px;
-  height: 43px;
-  font-size: 16px;
-  line-height: 23px;
-  letter-spacing: 0.1em;
-  color: #FAB63E;
-  margin-left: 38px;
-  text-align: left; }
+  display: flex;
+  justify-content: space-between; }
+  .reasons__inner {
+    padding: 151px 0 95px 178px; }
+  .reasons__heading {
+    width: 223px;
+    height: 51px;
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.006em;
+    color: #FFFFFF;
+    margin-bottom: 75px; }
+  .reasons__text {
+    width: 455px;
+    height: 235px;
+    line-height: 35px;
+    color: #FFFFFF; }
+    .reasons__text--bold {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 29px; }
+    .reasons__text--small-text {
+      font-size: 16px;
+      line-height: 28px; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

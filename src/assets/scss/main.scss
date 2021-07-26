@@ -7,7 +7,7 @@
 html,
 body {
     font-family: "Larsseit";
-    max-width: 1920px;
+    max-width: 1437px;
     margin: 0 auto;
     padding: 0;
 }
@@ -22,9 +22,14 @@ a {
     display: inline-block;
     text-decoration: none;
 }
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
 
 
+@import './components/buttons';
 @import './layouts/header';
 @import './layouts/menu';
-@import './components/buttons';
+@import './reasons';
 @import './normalize';

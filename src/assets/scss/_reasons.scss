@@ -1,0 +1,33 @@
+.reasons{
+    height: 607px;
+    background: #62D0DF;
+    display:flex;
+    justify-content: space-between;
+    &__inner{
+        padding:151px 0 95px 178px;
+    }
+    &__heading{
+        width: 223px;
+        height: 51px;
+        font-size: 36px;
+        line-height: 27px;
+        letter-spacing: -0.006em;
+        color: #FFFFFF;
+        margin-bottom: 75px;
+    }
+    &__text{
+        width: 455px;
+        height: 235px;
+        line-height: 35px;
+        color: #FFFFFF;
+        &--bold{
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 29px;
+        }
+        &--small-text{
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}
