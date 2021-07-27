@@ -39,5 +39,9 @@ button{
         color: #FAB63E;
         margin-left:38px;
         text-align: left;
+        padding: 0;
+        &#fact{
+            margin:0;
+        }
     }
 }
