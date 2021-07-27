@@ -30,18 +30,24 @@ button{
         letter-spacing: 0.1em;
         color: #FFFFFF;
     }
-    &--no-bg--yellow{
-        width: 150px;
-        height: 43px;
-        font-size: 16px;
-        line-height: 23px;
-        letter-spacing: 0.1em;
-        color: #FAB63E;
-        margin-left:38px;
-        text-align: left;
-        padding: 0;
+    &--no-bg{
+        &#yellow{
+            width: 150px;
+            height: 43px;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0.1em;
+            color: #FAB63E;
+            margin-left:38px;
+            text-align: left;
+            padding: 0;
+        }
         &#fact{
             margin:0;
+        }
+        &#assessment{
+            margin:0;
+            color:#62D0DF;
         }
     }
 }

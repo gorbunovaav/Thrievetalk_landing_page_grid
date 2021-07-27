@@ -40,7 +40,7 @@
                     sex, PTSD, depression, social anxiety, or even just caring for yourself more.
                 </p>
                 <button class="header__btn--square">WHO AM I</button>
-                <button class="header__btn--no-bg--yellow">WHAT DO I DO</button>
+                <button class="header__btn--no-bg" id="yellow">WHAT DO I DO</button>
             </div>
 
             <img class="header__img" src="./assets/images/header__img.png" alt="Header_image">
@@ -134,40 +134,51 @@
 
     </section>
     <section class="assessment">
-        <a class="assessment__link" href="">CONTACT US</a>
-        <h2 class="assessment__heading">Ready. Set. Smile</h2>
-        <p class="assessment__text">
-            Take the free online assessment to see if you are a candidate and get started on your journey.
-        </p>
-        <button class="assessment__btn--no-bg--blue">GET HELP NOW</button>
+        <div class="assessment__inner">
+            <a class="assessment__link" href="">CONTACT US</a>
+            <h2 class="assessment__heading">Ready. Set. Smile</h2>
+            <p class="assessment__text">
+                Take the free online assessment to see if you are a candidate and get started on your journey.
+            </p>
+            <button class="header__btn--no-bg" id="assessment">GET HELP NOW</button>
+        </div>
         <img class="assessment__img" src="./assets/images/Assessment_image.png" alt="Assessment_image">
     </section>
     <footer class="footer">
         <div class="footer__main">
             <img class="footer__img" src="./assets/images/footer_image.png" alt="Footer_image">
-            <div class="footer__info">
-                <h4 class="footer__heading">SOME INFO</h4>
-                <p class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
-                </p>
-            </div>
-            <div class="footer__contacts">
-                <h4 class="footer__heading">ENFOLD HEALTH</h4>
-                <p class="footer__adress">Main Street 1, Olcott
-                    Buffalo, United States
-                </p>
-                <p class="footer__phone">+555 283 784 333</p>
-                <p class="footer__email">office@enfold-health.com</p>
-            </div>
-            <div class="footer__hours">
-                <h4 class="footer__heading">OFFICE HOURS</h4>
-                <p class="footer__text">Mo-Fr: 8:00-19:00
-                    Sa: 8:00-14:00
-                    Su: closed
-                </p>
-            </div>
+            <ul class="footer__list">
+                <div class="footer__list-item" id="info">
+                    <h4 class="footer__heading">SOME INFO</h4>
+                    <p class="footer__inner">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula.
+                    </p>
+                </div>
+                </li>
+                <li class="footer__list-item" id="contacts">
+                    <h4 class="footer__heading">ENFOLD HEALTH</h4>
+                    <div class="footer__inner">
+                        <p class="footer__address">Main Street 1, Olcott
+                            Buffalo, United States
+                        </p>
+                        <p class="footer__phone">+555 283 784 333</p>
+                        <a class="footer__email" href="">office@enfold-health.com</a>
+                    </div>
+                </li>
+                <li class="footer__list-item" id="hours">
+                    <h4 class="footer__heading">OFFICE HOURS</h4>
+                    <div class="footer__inner">
+                        <ul class="footer__hours">
+                            <li class="footer__hours-item">Mo-Fr: 8:00-19:00</li>
+                            <li class="footer__hours-item">Sa: 8:00-14:00</li>
+                            <li class="footer__hours-item">Su: closed</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
         <div class="footer__bottom">
-            <span class="footer__bottom--text">© - ThriveTalk 2017</span>
+            <span class="footer__bottom--text">Copyright - ThriveTalk 2017</span>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>

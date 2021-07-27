@@ -69,6 +69,11 @@ button:hover {
     color: #FAB63E;
     margin-left: 38px;
     text-align: left;
+    padding: 0;
+}
+
+.header__btn--no-bg--yellow#fact {
+    margin: 0;
 }
 
 .header {
@@ -359,6 +364,63 @@ button:hover {
     color: rgba(34, 53, 111, 0.5);
     width: 298px;
     height: 84px;
+}
+
+.fact {
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 800px;
+}
+
+.fact__inner {
+    padding: 103px 175px 42px 106px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-area: 1/2/1/span 2;
+}
+
+.fact__heading {
+    width: 217px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: #22356F;
+    margin-bottom: 225px;
+}
+
+.fact__text {
+    width: 676px;
+    height: 215px;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: #22356F;
+    margin-bottom: 152px;
+}
+
+.fact__text--blue {
+    color: #62D0DF;
+}
+
+.assessment {
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 800px;
+    background-color: #22356F;
+}
+
+.assessment__inner {
+    padding: 103px 201px 42px 180px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-area: 1/1/1/span 2;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

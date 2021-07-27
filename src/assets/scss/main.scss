@@ -27,7 +27,7 @@ a:hover {
     color: inherit;
 }
 
-
+@import './normalize';
 @import './components/buttons';
 @import './layouts/header';
 @import './layouts/menu';
@@ -36,4 +36,5 @@ a:hover {
 @import './help';
 @import './advantage';
 @import './fact';
-@import './normalize';
+@import './assessment';
+@import './layouts/footer';
