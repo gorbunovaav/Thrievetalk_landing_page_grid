@@ -6,9 +6,12 @@
 html,
 body {
   font-family: "Larsseit";
-  max-width: 1437px;
   margin: 0 auto;
   padding: 0; }
+
+.container {
+  width: 100%;
+  padding: 0 15px; }
 
 ul {
   list-style: none;
@@ -352,7 +355,11 @@ button:hover {
   line-height: 16px;
   color: #FFFFFF;
   border: none;
-  z-index: 10; }
+  z-index: 1000000000000000;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px; }
 
 .header__btn--square {
   width: 150px;
@@ -382,7 +389,11 @@ button:hover {
 
 .header {
   height: 840px;
-  background-color: #F4F9E2; }
+  background-color: #F4F9E2;
+  background-size: 100%; }
+  .header .container {
+    top: 0;
+    right: 0; }
   .header__top {
     padding: 27px 137px 187px 179px;
     display: flex;
@@ -395,10 +406,12 @@ button:hover {
     color: #62D0DF; }
   .header__inner {
     display: flex;
+    justify-content: space-between;
     position: relative; }
     .header__inner--text {
       margin: 0;
-      padding-left: 179px; }
+      padding-left: 179px;
+      margin-right: 50px; }
   .header__heading {
     padding-top: 37px;
     margin: 0;
@@ -417,9 +430,23 @@ button:hover {
     margin-top: 19px;
     margin-bottom: 63px; }
   .header__img {
+    z-index: 999999;
     position: absolute;
-    right: 0px;
-    bottom: -74px; }
+    top: -255px;
+    right: -14px; }
+    .header__img--wrapper {
+      position: relative;
+      z-index: 999999; }
+      .header__img--wrapper::after {
+        content: "";
+        display: block;
+        width: 807px;
+        height: 544px;
+        position: absolute;
+        background-image: url(./../images/header_pseudo.png);
+        top: -264px;
+        right: -117px;
+        z-index: 2; }
 
 .menu__list {
   display: flex;
@@ -437,7 +464,8 @@ button:hover {
   display: flex;
   justify-content: space-between; }
   .reasons__inner {
-    padding: 151px 0 95px 178px; }
+    padding: 151px 0 0 178px;
+    margin-right: 181px; }
   .reasons__heading {
     width: 223px;
     height: 51px;
@@ -448,7 +476,6 @@ button:hover {
     margin-bottom: 75px; }
   .reasons__text {
     width: 455px;
-    height: 235px;
     line-height: 35px;
     color: #FFFFFF; }
     .reasons__text--bold {
@@ -458,6 +485,10 @@ button:hover {
     .reasons__text--small-text {
       font-size: 16px;
       line-height: 28px; }
+  .reasons__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
 
 .about {
   height: 361px;
@@ -491,24 +522,37 @@ button:hover {
     color: rgba(34, 53, 111, 0.5); }
   .help__list1 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 360px; }
+    grid-template-columns: repeat(4, 360px);
+    grid-template-rows: 360px;
+    justify-content: center; }
+    .help__list1 :first-child {
+      background-color: #FFE2DE; }
     .help__list1-item {
-      padding: 95px 50px 211px 78px;
+      padding: 95px 50px 0 78px;
       font-size: 32px;
       line-height: 34px;
       letter-spacing: -0.006em;
       color: #FFFFFF;
       font-weight: bold;
-      display: flex; }
+      display: flex;
+      position: relative; }
       .help__list1-item:before {
         color: #E9B730;
         content: "•";
-        padding-right: 15px;
         width: 9px;
-        height: 9px; }
-      .help__list1-item#rose {
-        background-color: #FFE2DE; }
+        height: 9px;
+        position: absolute;
+        top: 87px;
+        left: 56px; }
+      .help__list1-item:after {
+        content: "";
+        display: inline-block;
+        background-color: white;
+        width: 255px;
+        height: 1px;
+        position: absolute;
+        left: 52px;
+        top: 72px; }
       .help__list1-item#green {
         background-color: #C4E769; }
       .help__list1-item#lightblue {
@@ -519,8 +563,9 @@ button:hover {
     margin-top: 120px;
     height: 960px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
+    grid-template-columns: repeat(3, 480px);
+    grid-template-rows: repeat(2, 480px);
+    justify-content: center; }
     .help__list2-item {
       padding: 126px 219px 282px 104px;
       font-size: 32px;
@@ -528,19 +573,31 @@ button:hover {
       letter-spacing: -0.006em;
       color: #FFFFFF;
       display: flex;
-      font-weight: bold; }
+      font-weight: bold;
+      position: relative; }
       .help__list2-item:before {
         color: #E9B730;
         content: "•";
-        padding-right: 20px;
         width: 12px;
-        height: 12px; }
+        height: 12px;
+        position: absolute;
+        top: 126px;
+        left: 77px; }
+      .help__list2-item:after {
+        content: "";
+        display: inline-block;
+        background-color: white;
+        width: 340px;
+        height: 1px;
+        position: absolute;
+        left: 70px;
+        top: 96px; }
       .help__list2-item#darkblue {
         background-color: #22356F; }
       .help__list2-item#blue {
         background-color: #0052C1; }
       .help__list2-item#backgr {
-        background-image: url(/src/assets/images/Help_nutrition_bg.png);
+        background-image: url(./../images/Help_nutrition_bg.png);
         width: 480px;
         height: 480px;
         background-position: center; }
@@ -552,18 +609,17 @@ button:hover {
         background-color: #8F00FF; }
 
 .advantage {
-  height: 542px; }
+  padding-top: 22px;
+  padding-bottom: 40px; }
   .advantage__list {
-    height: 480px;
-    margin-top: 22px;
-    margin-bottom: 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
+    grid-template-columns: repeat(3, 480px);
+    grid-template-rows: repeat(2, 240px);
+    justify-content: center; }
     .advantage__list-item {
       display: flex;
       flex-direction: column;
-      padding: 55px 141px 37px 105px; }
+      padding: 55px 0 0 105px; }
   .advantage__heading {
     font-size: 28px;
     line-height: 33px;
@@ -575,8 +631,7 @@ button:hover {
     line-height: 25px;
     letter-spacing: -0.03em;
     color: rgba(34, 53, 111, 0.5);
-    width: 298px;
-    height: 84px; }
+    width: 298px; }
 
 .fact {
   height: 800px;
@@ -606,6 +661,10 @@ button:hover {
     margin-bottom: 152px; }
     .fact__text--blue {
       color: #62D0DF; }
+  .fact__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .assessment {
   height: 800px;
@@ -641,6 +700,11 @@ button:hover {
     letter-spacing: -0.005em;
     color: #FFFFFF;
     margin-bottom: 61px; }
+  .assessment__img {
+    justify-self: end;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .footer__main {
   height: 380px;

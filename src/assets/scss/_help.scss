@@ -12,27 +12,42 @@
 
     &__list1 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 360px);
         grid-template-rows: 360px;
+        justify-content: center;
+        :first-child {
+            background-color: #FFE2DE;
+        }
         &-item {
-                padding: 95px 50px 211px 78px;
+                padding: 95px 50px 0 78px;
                 font-size: 32px;
                 line-height: 34px;
                 letter-spacing: -0.006em;
                 color: #FFFFFF;
                 font-weight: bold;
                 display: flex;
+                position: relative;
                 &:before {
                     color: #E9B730;
                     content: "•";
-                    padding-right: 15px;
                     width: 9px;
                     height: 9px;
+                    position:absolute;
+                    top: 87px;
+                    left: 56px;
+                }
+                &:after{
+                    content:"";
+                    display: inline-block;
+                    background-color:white;
+                    width: 255px;
+                    height: 1px;
+                    position:absolute;
+                    left: 52px;
+                    top: 72px;
                 }
 
-            &#rose {
-                background-color: #FFE2DE;
-            }
+            
             &#green {
                 background-color:#C4E769;
             }
@@ -50,8 +65,9 @@
         margin-top: 120px;
         height:960px;
         display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 480px);
+        grid-template-rows: repeat(2, 480px);
+        justify-content: center;
         &-item{
             padding: 126px 219px 282px 104px;
             font-size: 32px;
@@ -60,12 +76,25 @@
             color: #FFFFFF;
             display: flex;
             font-weight: bold;
+            position: relative;
             &:before {
                 color: #E9B730;
                 content: "•";
-                padding-right: 20px;
                 width: 12px;
                 height: 12px;
+                position:absolute;
+                top: 126px;
+                left: 77px;
+            }
+            &:after{
+                content:"";
+                display: inline-block;
+                background-color:white;
+                width: 340px;
+                height: 1px;
+                position:absolute;
+                left: 70px;
+                top: 96px;
             }
             &#darkblue{
                 background-color:#22356F;
@@ -74,7 +103,7 @@
                 background-color:#0052C1;
             }
             &#backgr{
-                background-image:url(/src/assets/images/Help_nutrition_bg.png);
+                background-image:url(./../images/Help_nutrition_bg.png);
                 width: 480px;
                 height: 480px;
                 background-position: center;

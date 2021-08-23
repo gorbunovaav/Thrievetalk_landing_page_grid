@@ -1,21 +1,17 @@
 .advantage {
-    height: 542px;
-
+    padding-top: 22px;
+    padding-bottom: 40px;
     &__list {
-        height: 480px;
-        margin-top: 22px;
-        margin-bottom: 40px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
+        grid-template-columns: repeat(3, 480px);
+        grid-template-rows: repeat(2, 240px);
+        justify-content: center;
         &-item {
             display: flex;
             flex-direction: column;
-            padding:55px 141px 37px 105px;
+            padding:55px 0 0 105px;
         }
     }
-
     &__heading {
         font-size: 28px;
         line-height: 33px;
@@ -23,13 +19,11 @@
         color: #22356F;
         margin-bottom: 28px;
     }
-
     &__text {
         font-size: 16px;
         line-height: 25px;
         letter-spacing: -0.03em;
         color: rgba(34, 53, 111, 0.5);
         width: 298px;
-        height: 84px;
     }
 }

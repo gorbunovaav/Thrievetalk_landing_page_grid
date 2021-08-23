@@ -1,11 +1,18 @@
 .header{
     height: 840px;
     background-color: #F4F9E2;
+    background-size: 100%;
+    .container{
+        top:0;
+        right:0;
+    }
+
     &__top{
         padding:27px 137px 187px 179px;
         display: flex;
         justify-content: space-between;
         align-items:baseline;
+
     }
     &__logo{
         font-size: 24px;
@@ -15,10 +22,12 @@
     }
     &__inner{
         display: flex;
-        position:relative;
+        justify-content: space-between;
+        position: relative;
         &--text{
             margin: 0;
             padding-left: 179px;
+            margin-right: 50px;
         }
     }
     &__heading{
@@ -41,8 +50,24 @@
         margin-bottom: 63px;
     }
     &__img{
-        position:absolute;
-        right:0px;
-        bottom: -74px;
+        z-index:999999;
+        position: absolute;
+        top: -255px;
+        right: -14px;
+        &--wrapper{
+            position: relative;
+            z-index:999999;
+            &::after{
+                content:"";
+                display: block;
+                width: 807px;
+                height: 544px;
+                position: absolute;
+                background-image:url(./../images/header_pseudo.png);
+                top: -264px;
+                right: -117px;
+                z-index:2;
+            }
+        }
     }
 }
