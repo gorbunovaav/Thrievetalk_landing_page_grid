@@ -553,11 +553,11 @@ button:hover {
         position: absolute;
         left: 52px;
         top: 72px; }
-      .help__list1-item#green {
+      .help__list1-item:nth-child(2) {
         background-color: #C4E769; }
-      .help__list1-item#lightblue {
+      .help__list1-item:nth-child(3) {
         background-color: #62D0DF; }
-      .help__list1-item#blue {
+      .help__list1-item:last-child {
         background-color: #0052C1; }
   .help__list2 {
     margin-top: 120px;
@@ -592,20 +592,20 @@ button:hover {
         position: absolute;
         left: 70px;
         top: 96px; }
-      .help__list2-item#darkblue {
+      .help__list2-item:first-child {
         background-color: #22356F; }
-      .help__list2-item#blue {
+      .help__list2-item:nth-child(2) {
         background-color: #0052C1; }
-      .help__list2-item#backgr {
+      .help__list2-item:nth-child(3) {
         background-image: url(./../images/Help_nutrition_bg.png);
         width: 480px;
         height: 480px;
         background-position: center; }
-      .help__list2-item#lightblue {
+      .help__list2-item:nth-child(4) {
         background-color: #62D0DF; }
-      .help__list2-item#rose {
+      .help__list2-item:nth-child(5) {
         background-color: #DEE1FF; }
-      .help__list2-item#purple {
+      .help__list2-item:last-child {
         background-color: #8F00FF; }
 
 .advantage {

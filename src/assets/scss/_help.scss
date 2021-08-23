@@ -47,16 +47,14 @@
                     top: 72px;
                 }
 
-            
-            &#green {
+            &:nth-child(2) {
                 background-color:#C4E769;
             }
-            &#lightblue {
+            &:nth-child(3) {
                 background-color:#62D0DF;
             }
-            &#blue {
+            &:last-child {
                 background-color:#0052C1;
-                ;
             }
         }
     }
@@ -96,26 +94,26 @@
                 left: 70px;
                 top: 96px;
             }
-            &#darkblue{
+            &:first-child{
                 background-color:#22356F;
             }
-            &#blue{
+            &:nth-child(2){
                 background-color:#0052C1;
             }
-            &#backgr{
+            &:nth-child(3){
                 background-image:url(./../images/Help_nutrition_bg.png);
                 width: 480px;
                 height: 480px;
                 background-position: center;
             }
-            &#lightblue{
+            &:nth-child(4){
                 background-color:#62D0DF;
             }
-            &#rose{
+            &:nth-child(5){
                 background-color:#DEE1FF;
                 ;
             }
-            &#purple{
+            &:last-child{
                 background-color:#8F00FF;
             }
         }

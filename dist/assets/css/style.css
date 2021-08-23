@@ -631,6 +631,8 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(4, 360px);
     grid-template-rows: 360px;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .help__list1 :first-child {
@@ -688,6 +690,8 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 480px);
     grid-template-rows: repeat(2, 480px);
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .help__list2-item {
@@ -723,30 +727,30 @@ button:hover {
     top: 96px;
 }
 
-.help__list2-item#darkblue {
+.help__list2-item:first-child {
     background-color: #22356F;
 }
 
-.help__list2-item#blue {
+.help__list2-item:nth-child(2) {
     background-color: #0052C1;
 }
 
-.help__list2-item#backgr {
+.help__list2-item:nth-child(3) {
     background-image: url(./../images/Help_nutrition_bg.png);
     width: 480px;
     height: 480px;
     background-position: center;
 }
 
-.help__list2-item#lightblue {
+.help__list2-item:nth-child(4) {
     background-color: #62D0DF;
 }
 
-.help__list2-item#rose {
+.help__list2-item:nth-child(5) {
     background-color: #DEE1FF;
 }
 
-.help__list2-item#purple {
+.help__list2-item:last-childf {
     background-color: #8F00FF;
 }
 
@@ -759,6 +763,8 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 480px);
     grid-template-rows: repeat(2, 240px);
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .advantage__list-item {
@@ -825,6 +831,13 @@ button:hover {
     color: #62D0DF;
 }
 
+.fact__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
 .assessment {
     height: 800px;
     display: grid;
@@ -870,6 +883,14 @@ button:hover {
     letter-spacing: -0.005em;
     color: #FFFFFF;
     margin-bottom: 61px;
+}
+
+.assessment__img {
+    justify-self: end;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .footer__main {
